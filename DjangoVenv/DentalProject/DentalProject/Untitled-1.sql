@@ -1,0 +1,5 @@
+-- USE master;
+-- CREATE Table User(
+--     userid INT PRIMARY KEY,
+--     username char(30);
+-- );

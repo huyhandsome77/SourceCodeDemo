@@ -1,0 +1,31 @@
+{% extends "master.html" %} 
+{% block menu-inner %} 
+{% include "../includes/menu-inner.html" %} 
+{% endblock %} 
+{% block content %}
+<div class="container-xxl flex-grow-1 container-p-y">
+  <div class="card">
+    <h5 class="card-header">Dentist</h5>
+    <div class="table-responsive text-nowrap">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Full Name</th>
+            <th>Gender</th>
+            <th>Experience Years</th>
+          </tr>
+        </thead>
+        <tbody class="table-border-bottom-0">
+          {% for doctor in doctors %}
+          <tr>
+            <td>{{ doctor.fullname }}</td>
+            <td>{% if doctor.gender %}Male{% else %}Female{% endif %}</td>
+            <td>{{ doctor.experience_years }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+{% endblock content %}
