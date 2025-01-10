@@ -21,3 +21,7 @@ def account(request):
     context = {
     }
     return HttpResponse(template.render(context, request))
+
+
+def login(request):
+    return render(request, 'static/home/html/auth-login-basic.html')

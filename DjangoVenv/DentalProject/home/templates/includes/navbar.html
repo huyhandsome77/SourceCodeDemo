@@ -30,13 +30,16 @@
       <!-- Place this tag where you want the button to render. -->
       <li class="nav-item lh-1 me-4">
         <a
-          class="github-button"
-          href="https://github.com/themeselection/sneat-html-admin-template-free"
-          data-icon="octicon-star"
-          data-size="large"
-          data-show-count="true"
-          aria-label="Star themeselection/sneat-html-admin-template-free on GitHub"
-          >Star</a
+          class="btn btn-primary"
+          href="{% url 'login'%}"
+          >Đăng nhập</a
+        >
+      </li>
+      <li class="nav-item lh-1 me-4">
+        <a
+          class="btn btn-secondary" 
+          href=""
+          >Đăng ký</a
         >
       </li>
 
@@ -49,7 +52,7 @@
         >
           <div class="avatar avatar-online">
             <img
-              src="{%static 'home/assets/img/avatars/1.png' %}"
+              src="{%static 'home/assets/img/avatars/2.jpg' %}"
               alt
               class="w-px-40 h-auto rounded-circle"
             />
@@ -62,7 +65,7 @@
                 <div class="flex-shrink-0 me-3">
                   <div class="avatar avatar-online">
                     <img
-                      src="{%static 'home/assets/img/avatars/1.png' %}"
+                      src="{%static 'home/assets/img/avatars/2.jpg' %}"
                       alt
                       class="w-px-40 h-auto rounded-circle"
                     />
